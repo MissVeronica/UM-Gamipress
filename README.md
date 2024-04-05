@@ -1,11 +1,11 @@
-# UM Gamipress
-Addition of UM Members Directory to the "Gamipress Ultimate Member Integration".
+# UM GamiPress
+Addition of UM Members Directory to the "GamiPress Ultimate Member Integration".
 
-The code snippet which will create the HTML required by UM is using the "gamipress_ultimate_member_after_header_meta" function from the "Gamipress Ultimate Member Integration".
+The code snippet which will create the HTML required by UM is using the "gamipress_ultimate_member_after_header_meta" function from the "GamiPress Ultimate Member Integration".
 https://gamipress.com/add-ons/ultimate-member-integration/
 
 ## Customization
-For each of the Members Directory templates ( `members-grid.php`, `members-list.php` ) you must add `{{{user.gamipress}}}` to the templates where you want the Gamipress User points displayed.
+For each of the Members Directory templates ( `members-grid.php`, `members-list.php` ) you must add `{{{user.gamipress}}}` to the templates where you want the GamiPress User points displayed.
  
 Example for `members-grid.php` is after `{{{user.hook_just_after_name}}}`
 
