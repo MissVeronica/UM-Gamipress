@@ -26,3 +26,6 @@ function um_ajax_get_members_data_gamipress( $data_array, $user_id, $directory_d
 
 
 Install by adding the code snippet to your active theme’s functions.php file or use the “Code Snippets” Plugin https://wordpress.org/plugins/code-snippets/
+
+## Updates
+None
