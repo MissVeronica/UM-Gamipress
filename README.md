@@ -17,9 +17,11 @@ https://docs.ultimatemember.com/article/1516-templates-map
 <code>
 add_filter( 'um_ajax_get_members_data', 'um_ajax_get_members_data_gamipress', 10, 3 );
 function um_ajax_get_members_data_gamipress( $data_array, $user_id, $directory_data )  {
-    ob_start();
-    gamipress_ultimate_member_after_header_meta( $user_id, array() );
-    $data_array['gamipress'] = wp_kses( ob_get_clean(), UM()->get_allowed_html( 'templates' ) );
+    if ( defined( 'GAMIPRESS_VER' )) {
+        ob_start();
+        gamipress_ultimate_member_after_header_meta( $user_id, array() );
+        $data_array['gamipress'] = wp_kses( ob_get_clean(), UM()->get_allowed_html( 'templates' ) );
+    }
     return $data_array;
 }
 </code>
@@ -28,4 +30,4 @@ function um_ajax_get_members_data_gamipress( $data_array, $user_id, $directory_d
 Install by adding the code snippet to your active theme’s functions.php file or use the “Code Snippets” Plugin https://wordpress.org/plugins/code-snippets/
 
 ## Updates
-None
+Test for GamiPress plugin active
